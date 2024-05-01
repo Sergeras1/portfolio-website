@@ -1,0 +1,421 @@
+body {
+    background-color: #1F1E1C;
+    color: white; /* Устанавливаем цвет текста */
+    font-family: Arial, sans-serif; /* Выбираем шрифт текста */
+    margin: 0; /* Убираем внешние отступы у body */
+}
+
+header {
+    position: fixed; /* Зафиксировать позицию */
+    top: 0; /* Прикрепить к верхнему краю */
+    width: 100%; /* Занимать всю ширину окна браузера */
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000; /* Установить высокий уровень наложения, чтобы остаться поверх контента */
+
+}
+.btn {
+    background-color: #30A7E2; /* Задаем цвет фона кнопки */
+    border: none; /* Убираем границы */
+    color: white; /* Задаем цвет текста */
+    padding: 15px 32px; /* Задаем внутренние отступы */
+    text-align: center; /* Выравниваем текст по центру */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    display: inline-block; /* Делаем кнопку блочным элементом */
+    font-size: 16px; /* Задаем размер шрифта */
+    border-radius: 12px; /* Задаем радиус скругления углов */
+    cursor: pointer; /* Делаем курсор в виде указателя при наведении */
+    transition-duration: 0.4s; /* Задаем время анимации */
+}
+
+    .btn:hover {
+        background-color: #31ffee; /* Задаем новый цвет фона при наведении */
+    }
+.btn:hover {
+    box-shadow: 0 0 7px rgb(0, 255, 33); /* Создаем эффект свечения при нажатии */
+}
+nav {
+    background-color: #333; /* Цвет фона навигации */
+    padding: 50px 0; /* Уменьшить верхний и нижний отступ */
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+            }
+.icon-container {
+    position: absolute;
+    top: 38%;
+    left: 620px; 
+    transform: translateY(-50%);
+}
+
+    .icon-container img {
+        width: 50px; /* Настройте размер иконки по вашему усмотрению */
+    }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 400px;
+}
+
+.image-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+    .image-container img {
+        max-width: 100%;
+        
+     
+    }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+}
+
+    .overlay p {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        padding: 20px;
+    }
+.animated-text {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    animation: slideIn 2s ease;
+    animation-fill-mode: forwards; /* Держим текст на месте после окончания анимации */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.icon-container1 {
+    position: absolute;
+    top: 1250px;
+    left: 500px;
+    transform: translateY(-50%);
+}
+
+    .icon-container1 img {
+        width: 50px; /* Настройте размер иконки по вашему усмотрению */
+    }
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: -200px;
+}
+
+h1 {
+    font-size: 36px;
+   
+}
+
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+}
+
+.circle-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #30A7E2;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s ease;
+    margin-right: 1300px;
+}
+
+    .circle:hover {
+        background-color: #31FFEE;
+        transform: scale(1.1); /* Увеличение круга на 10% */
+        box-shadow: 0 0 10px rgba(0, 255, 33); /* Тень для подсветки */
+    }
+.text-container {
+    margin-left: -1250px ; /* Отступ между кружком и текстом */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.circle-container2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 900px;
+    margin-top: -800px;
+}
+
+.circle-wrapper2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.circle2 {
+    width: 100px;
+    height: 100px;
+    background-color: #30A7E2;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s ease;
+    margin-right: 1300px;
+}
+
+    .circle2:hover {
+        background-color: #31FFEE;
+        transform: scale(1.1); /* Увеличение круга на 10% */
+        box-shadow: 0 0 10px rgba(0, 255, 33); /* Тень для подсветки */
+    }
+
+.text-container2 {
+    margin-left: -1250px; /* Отступ между кружком и текстом */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+.icon-container2 {
+    position: absolute;
+    top: 2408px;
+    left: 620px;
+    transform: translateY(-50%);
+}
+
+    .icon-container2 img {
+        width: 50px; /* Настройте размер иконки по вашему усмотрению */
+    }
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: -500px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.image-wrapper {
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative; /* Для позиционирования текста */
+}
+
+    .image-wrapper img {
+        width: 200px; /* Установите желаемую ширину */
+        height: 200px; /* Установите желаемую высоту */
+        border-radius: 10px; /* Закругление углов картинок */
+        transition: opacity 0.5s ease; /* Анимация при наведении */
+    }
+
+    .image-wrapper:hover img {
+        opacity: 0;
+    }
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Анимация при наведении */
+}
+
+.image-wrapper:hover .image-text {
+    opacity: 1;
+}
+
+.icon-container3 {
+    position: absolute;
+    top: 3000px;
+    left: 610px;
+    transform: translateY(-50%);
+}
+
+    .icon-container3 img {
+        width: 50px; /* Настройте размер иконки по вашему усмотрению */
+    }
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: -400px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.project {
+    width: 30%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease; /* Анимация появления */
+
+}
+
+    .project:hover {
+        transform: translateY(-10px); /* Сдвиг на 10px при наведении */
+      
+    }
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: #555;
+}
+a {
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+    color: #555555; /* Цвет текста ссылки */
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+    a:hover {
+        color: #31FFEE; /* Изменяем цвет текста при наведении курсора */
+        text-shadow: 0 0 1px rgba(0, 255, 33);
+    }
+
+.icon-container4 {
+    position: absolute;
+    top: 3750px;
+    left: 610px;
+    transform: translateY(-50%);
+}
+
+    .icon-container4 img {
+        width: 50px; /* Настройте размер иконки по вашему усмотрению */
+    }
+
+.container4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: -400px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    margin-right: 10px; /* Расстояние между иконками контактов */
+    margin-bottom: 20px;
+}
+
+    .contact:last-child {
+        margin-right: 0; /* Убираем правый отступ у последней иконки контакта */
+    }
+
+    .contact img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+
+.btn2 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #30A7E2;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition-duration: 0.4s; /* Задаем время анимации */
+}
+
+    .btn2:hover {
+        background-color: #31FFEE;
+        box-shadow: 0 0 7px rgb(0, 255, 33); /* Создаем эффект свечения при нажатии */
+    }
+footer {
+    background-color: #333; /* Цвет фона подвала */
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    width: auto;
+}
